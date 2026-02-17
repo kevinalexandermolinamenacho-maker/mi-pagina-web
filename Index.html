@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kevin Alexander | Ingeniería en Sistemas</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* ANIMACIÓN */
+@keyframes aparecer {
+    from {opacity:0; transform:translateY(30px);}
+    to {opacity:1; transform:translateY(0);}
+}
+
+header{
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(135deg,#1e3a8a,#0f172a);
+    animation:aparecer 1.2s ease;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header p{
+    margin-top:10px;
+    color:#cbd5e1;
+}
+
+section{
+    padding:50px 10%;
+    animation:aparecer 1.5s ease;
+}
+
+h2{
+    margin-bottom:20px;
+    border-left:5px solid #3b82f6;
+    padding-left:10px;
+    color:#3b82f6;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:20px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+    box-shadow:0 0 20px #3b82f6;
+}
+
+ul{
+    list-style:none;
+}
+
+ul li{
+    margin:8px 0;
+}
+
+.foto-final{
+    text-align:center;
+    margin-top:40px;
+}
+
+.foto-final img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #3b82f6;
+    box-shadow:0 0 25px #3b82f6;
+    transition:0.5s;
+}
+
+.foto-final img:hover{
+    transform:scale(1.05);
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#020617;
+    color:#94a3b8;
+    margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Kevin Alexander Molina Menacho</h1>
+    <p>Estudiante de Ingeniería en Sistemas | Futuro Programador</p>
+</header>
+
+<section>
+    <h2>Información Personal</h2>
+    <div class="card">
+        <ul>
+            <li><strong>Fecha de Nacimiento:</strong> 31/05/2008</li>
+            <li><strong>Edad:</strong> 17 años</li>
+            <li><strong>Sexo:</strong> Masculino</li>
+            <li><strong>Email:</strong> kevinalexandermolinamenacho@gmail.com</li>
+            <li><strong>Teléfono:</strong> 73317781</li>
+            <li><strong>N° Referencia:</strong> 74031876 - 74204449</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Formación Académica</h2>
+    <div class="card">
+        <ul>
+            <li>Kinder 20 de Mayo :(Formación de 2 años)</li>
+            <li>Escuela Mariscal Sucre :(Formación de 6 años)</li>
+            <li>Colegio 9 de Abril "A" :(Formación de 6 años)</li>
+        </ul>
+    </div>
+</section>
+<section>
+   <h2>Destreza</h2>
+   <div class="card">
+     <ul>
+       <li>Nucleo Tecnologico Productivo :(Formacion de 3 años)</li>
+        <li> Tecnico Medio: Mecanica Automotriz</li>
+     </ul>
+   </div>
+</section>
+
+<section>
+    <h2>Idiomas</h2>
+    <div class="card">
+        <ul>
+            <li>Español: Bueno</li>
+            <li>Inglés: Regular</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Motivación Profesional</h2>
+    <div class="card">
+        <p>
+            Elegí Ingeniería en Sistemas porque me apasiona la programación,
+            la tecnología y la innovación. Me motiva la alta demanda en el mercado
+            laboral y el impacto que el software puede generar en la sociedad.
+        </p>
+    </div>
+</section>
+
+<section class="foto-final">
+    <h2>Mi Foto Profesional</h2>
+    <img src="kevin.jpg" alt="Foto de Kevin">
+</section>
+
+<footer>
+    © 2026 Kevin Alexander Molina Menacho | Ingeniería en Sistemas
+</footer>
+
+</body>
+</html>
