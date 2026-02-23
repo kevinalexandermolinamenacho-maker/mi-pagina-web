@@ -198,18 +198,19 @@ footer{
 </footer>
 </body>
 <body>
-    <script>
-        const titulos = document.querySelectionAll("h2");
+<script>
+const titulos = document.querySelectorAll("h2");
 
-        titulo.addEventListener("click", () =>){
+titulos.forEach(titulo => {
+    titulo.addEventListener("click", () => {
 
-        document.querySelectionAll(".card").forEach(card => {
-            card.classList.remove("activo");});
-
-            titulo.nextElementSibling.classList.add ("activo");
+        document.querySelectorAll(".card").forEach(card => {
+            card.classList.remove("activo");
         });
-     });
-    </script>
-    
+
+        titulo.nextElementSibling.classList.add("activo");
+    });
+});
+</script>
 </body>
 </html>
