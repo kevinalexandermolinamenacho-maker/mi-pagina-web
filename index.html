@@ -6,6 +6,28 @@
 <title>Kevin Alexander | Ingeniería en Sistemas</title>
 
 <style>
+    .subtitulo{
+    margin-top:20px;
+    color:#3b82f6;
+    cursor:pointer;
+}
+
+.certificado-contenido{
+    display:none;
+    margin-top:15px;
+}
+
+.certificado-contenido img{
+    width:100%;
+    max-width:500px;
+    border-radius:15px;
+    box-shadow:0 0 20px #3b82f6;
+    transition:0.5s;
+}
+
+.certificado-contenido img:hover{
+    transform:scale(1.03);
+}
     .card{
     display:none;
 }
@@ -164,6 +186,27 @@ footer{
         </ul>
     </div>
 </section>
+    <section>
+    <h2>Cursos y Seminarios</h2>
+    <div class="card">
+
+        <h3 class="subtitulo">Manejo de la plataforma e campus.</h3>
+        <div class="certificado-contenido">
+            <img src="certificado1.jpg" alt="Certificado 1">
+        </div>
+
+        <h3 class="subtitulo">Computo Basico.</h3>
+        <div class="certificado-contenido">
+            <img src="certificado2.jpg" alt="Certificado 2">
+        </div>
+
+        <h3 class="subtitulo">Competencias Psicosociales</h3>
+        <div class="certificado-contenido">
+            <img src="certificado3.jpg" alt="Certificado 3">
+        </div>
+
+    </div>
+</section>
 
 <section>
     <h2>Motivación Personal</h2>
@@ -199,6 +242,19 @@ footer{
 </body>
 <body>
 <script>
+    const subtitulos = document.querySelectorAll(".subtitulo");
+
+subtitulos.forEach(sub => {
+    sub.addEventListener("click", () => {
+
+        document.querySelectorAll(".certificado-contenido").forEach(c => {
+            c.style.display = "none";
+        });
+
+        sub.nextElementSibling.style.display = "block";
+    });
+});
+   
 const titulos = document.querySelectorAll("h2");
 
 titulos.forEach(titulo => {
